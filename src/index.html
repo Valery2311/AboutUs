@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>BeerDay</title>
+</head>
+<body>
+    <div class="promo">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="icons/logo.png" alt="logo">
+                </a>
+                <h1 class="header__official">Вычислим оптимальное<br><span>количества пива</span> </h1>
+                <div class="header__contacts">
+                    <a href='tel:+7772676977' class="header__phone">+7 777 267 69 77</a>
+                    <button class="button">заказать консультацию</button>
+                </div>
+            </header>
+
+            <div class="promo__wrapper">
+                <div class="promo__header">Поможем вам расчитать необходимое<br> количества пива
+                    и различных закусок<br> для полного погружения в состояние<br> счастья, радости и хорошего<br> настроения
+                </div>
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/clock.png" alt="clock">
+                        Моментально расчитаем необходимое количество напитка
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/consulting.png" alt="chat">
+                        Отвечаем и консультируем в любое время
+                    </div>
+                </div>
+                <button class="button button__main">преступить к расчетам</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="consult">
+        <div class="container">
+            <h2 class="consult__title">заполните форму</h2>
+            <div class="consult__descr">укажите крепость напитка,<br> ваш вес и нажмите на кнопку</div>
+            <form class="feed-form" action="https://pivo.studygroup.site/api/v1/calculate" method="post">
+                <input name="degr" required placeholder="крепость напитка" type="number">
+                <input name="weigh" required placeholder="твой вес" type="number">
+                <button class="button button_submit">расчитать количество и состояние</button>
+            </form>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
